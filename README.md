@@ -1,1 +1,2 @@
-# Deploy-Model-on-Azure
+Deploy Mode on Microsoft Azure
+Web: https://iloveuet.azurewebsites.net/
