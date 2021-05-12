@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 model_svm = joblib.load('model_predict/svm.pkl')
-model_lgbm = joblib.load('model_predict/lgbm.pkl')
+#model_lgbm = joblib.load('model_predict/lgbm.pkl')
 model_catboost = joblib.load('model_predict/catboost.pkl')
 tfidf = joblib.load('model_predict/tfidf.pkl')
 word_tokenize = joblib.load('model_predict/underthesea.pkl')
@@ -24,16 +24,15 @@ def home():
     X = word_tokenize(text, format="text")
     features = tfidf.transform([X]).toarray()
     
-    print(X)
-    print(request_model)
-    
     if request_model == "2":
-        model = model_svm
+        model = model_catboost
     elif request_model == "3":
         model = model_catboost
     else:
         model = model_svm
         
+    print(X)
+    print(request_model)  
     print(model)
     
     pred = model.predict_proba(features) [:,1]
