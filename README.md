@@ -1,3 +1,3 @@
 Deploy Mode on Microsoft Azure
 
-Web: https://iloveuet.azurewebsites.net/
+Web: https://fake-news-detection.azurewebsites.net/
