@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-model_svm = joblib.load('model_predict/svm.pkl')
+model_svm = joblib.load('model_predict/model.pkl')
 #model_lgbm = joblib.load('model_predict/lgbm.pkl')
 model_catboost = joblib.load('model_predict/catboost.pkl')
 tfidf = joblib.load('model_predict/tfidf.pkl')
@@ -24,11 +24,7 @@ def home():
     X = word_tokenize(text, format="text")
     features = tfidf.transform([X]).toarray()
     
-    if request_model == "2":
-        model = model_catboost
-    elif request_model == "3":
-        model = model_catboost
-    else:
+    if request_model == "1":
         model = model_svm
         
     print(X)
