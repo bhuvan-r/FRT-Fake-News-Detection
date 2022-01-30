@@ -24,7 +24,11 @@ def home():
     X = word_tokenize(text, format="text")
     features = tfidf.transform([X]).toarray()
     
-    if request_model == "1":
+    if request_model == "2":
+        model = model_catboost
+    elif request_model == "3":
+        model = model_catboost
+    else:
         model = model_svm
         
     print(X)
