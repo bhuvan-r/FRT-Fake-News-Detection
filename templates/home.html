@@ -14,7 +14,7 @@
 
         <br> 
 
-        <h1> Fake News Detetion </h1>
+        <h1> Fake News Detection </h1>
             
         <form name="form" method="POST" action="{{url_for('home')}}" onsubmit="return validation()" >
             <textarea id = "input" type="text" name="input" placeholder="Enter Text Here..."></textarea> 
@@ -22,7 +22,10 @@
             <label for="model">Select model</label>
             <div class="custom-select" style="width:200px;">
                 <select name="model" id="model">
+                    <option value="0">...</option>
                     <option value="1">Model SVM</option>
+                    <option value="2">Model LightGBM</option>
+                    <option value="3">Model CatBoost</option>
                 </select>
             </div>
             <br>
