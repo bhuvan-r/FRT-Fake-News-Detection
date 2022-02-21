@@ -1,1 +1,1 @@
-Web App URl: http://fakenewsdetection-bybhuvan.azurewebsites.net/
+Web App URL: http://fakenewsdetection-bybhuvan.azurewebsites.net/
