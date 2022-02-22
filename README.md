@@ -1,5 +1,4 @@
-Deploy model Fake-News-Detection using Flask.
+Fake News Detection using ML
 
-Web: https://fake-news-detection-vn.herokuapp.com/
+Webapp URL: https://fakenewsdetection-by-bhuvan.herokuapp.com/
 
-Data: https://github.com/Ducanger/Fake-News-Detection
